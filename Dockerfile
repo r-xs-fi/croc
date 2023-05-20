@@ -1,5 +1,8 @@
 FROM alpine:latest
 
+ARG TARGETOS=linux
+ARG TARGETARCH=amd64
+
 WORKDIR /workspace
 
 ENTRYPOINT ["/usr/bin/croc"]
@@ -8,7 +11,7 @@ ENTRYPOINT ["/usr/bin/croc"]
 # that it would point in actual home directory (which we'd have to create also)
 RUN mkdir /tmp/install \
 	&& cd /tmp/install \
-	&& wget https://function61.com/app-dl/api/github.com/schollz/croc/latest_releases_asset/croc_%2A_Linux-64bit.tar.gz \
+	&& wget -O dummy.tar.gz "https://function61.com/app-dl/api/github.com/schollz/croc/latest_releases_asset/__autodetect__.tar.gz?os=$TARGETOS&arch=$TARGETARCH" \
 	&& tar -xzf *.tar.gz \
 	&& mv croc /usr/bin/ \
 	&& rm -rf /tmp/install \
