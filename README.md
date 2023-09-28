@@ -1,5 +1,7 @@
 Container image for croc - fast, simple, and secure file transfer between any two computers.
 
+trigger build
+
 ## Usage
 ```shell
 docker run --rm -it ghcr.io/r-xs-fi/croc
