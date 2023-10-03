@@ -1,8 +1,5 @@
 FROM alpine:latest
 
-ARG TARGETOS=linux
-ARG TARGETARCH=amd64
-
 WORKDIR /workspace
 
 ENTRYPOINT ["/usr/bin/croc"]
