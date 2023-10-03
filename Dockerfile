@@ -1,7 +1,8 @@
 FROM alpine:latest
 
-ARG TARGETOS=linux
-ARG TARGETARCH=amd64
+# can't have default values here, otherwise they'd overwrite the buildx-supplied ones
+ARG TARGETOS
+ARG TARGETARCH
 
 WORKDIR /workspace
 
