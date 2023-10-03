@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-ARG TARGETOS
-ARG TARGETPLATFORM
+ARG TARGETOS=linux
+ARG TARGETARCH=amd64
 
 WORKDIR /workspace
 
