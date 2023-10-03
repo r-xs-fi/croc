@@ -12,7 +12,8 @@ ENTRYPOINT ["/usr/bin/croc"]
 RUN echo $TARGETOS \
 	&& echo "->$TARGETOS" \
 	&& echo "->${TARGETOS}" \
-	&& export TARGETOS=$TARGETOS \
+	&& echo $TARGETARCH \
+ 	&& export TARGETOS=$TARGETOS \
 	&& export TARGETARCH=$TARGETARCH \
  	&& echo "downloading os=$TARGETOS&arch=$TARGETARCH" && mkdir /tmp/install \
 	&& cd /tmp/install \
