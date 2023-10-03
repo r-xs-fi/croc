@@ -1,5 +1,9 @@
 FROM alpine:latest
 
+
+ARG TARGETOS
+ARG TARGETPLATFORM
+
 WORKDIR /workspace
 
 ENTRYPOINT ["/usr/bin/croc"]
