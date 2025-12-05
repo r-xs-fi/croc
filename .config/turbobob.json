@@ -7,6 +7,6 @@
 		"website": "https://schollz.com/tinker/croc6/"
 	},
 	"docker_images": [
-		{ "image": "ghcr.io/r-xs-fi/croc", "platforms": ["linux/amd64", "linux/arm64", "linux/arm/v7"], "tag_latest": true }
+		{ "image": "ghcr.io/r-xs-fi/croc", "platforms": ["linux/amd64", "linux/arm64", "linux/arm/v7", "linux/riscv64"], "tag_latest": true }
 	]
 }

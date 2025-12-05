@@ -1,6 +1,3 @@
 {
-	"supply_chain_descriptor": "prebuilt-binaries:https://github.com/schollz/croc",
-	"not_building_for_platforms_because": {
-		"linux/riscv64": "Upstream has no prebuilt binary"
-	}
+	"supply_chain_descriptor": "prebuilt-binaries:https://github.com/schollz/croc"
 }
